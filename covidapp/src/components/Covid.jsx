@@ -24,8 +24,8 @@ export function Covid() {
             const actualData = await res.json();
             console.log(actualData.Global);
             setData(actualData.Global)
-        } catch (err) {
-            console.log(err);
+        } catch (error) {
+            console.log(error);
         }
 
     }
