@@ -19,15 +19,6 @@ export function Covid() {
         }
     }
 
-    //   useEffect(() => {
-    //     axios.get('https://api.covid19api.com/summary')
-    //         .then((response) => {
-    //             setData([...response.data]);
-    //             console.log(data.Global)
-    //             // setFilterComment([posts, ...response.data]);
-    //         });
-    // }, []);
-
     const getCoviddata = async () => {
         try {
             const res = await fetch('https://api.covid19api.com/summary');
