@@ -8,7 +8,6 @@ export function Covid() {
 
     useEffect(() => {
         document.body.className = theme;
-
     }, [theme]);
 
     const toggle = () => {
@@ -19,7 +18,7 @@ export function Covid() {
         }
     }
 
-    const getCoviddata = async () => {
+    const getCovidData = async () => {
         try {
             const res = await fetch('https://api.covid19api.com/summary');
             const actualData = await res.json();
@@ -32,7 +31,7 @@ export function Covid() {
     }
 
     useEffect(() => {
-        getCoviddata();
+        getCovidData();
     }, []);
 
     return (
